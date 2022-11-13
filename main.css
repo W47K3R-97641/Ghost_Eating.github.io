@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+#playground {
+    max-width: 100vw;
+    height: calc(100vh - 50px);
+    position: relative;
+    border: 5px solid red;
+    margin-bottom: 2px;
+    overflow: hidden;
+}
+
+#playground>div {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+}
+
+#playground>#player::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 10px;
+    background-color: red;
+    top: 11px;
+    left: 5px;
+    z-index: -1;
+    border-radius: 5px;
+}
